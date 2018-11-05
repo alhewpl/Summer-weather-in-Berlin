@@ -6,9 +6,9 @@ from darksky import forecast
 from conf import token, cities, start, end
 
 conn = mysql.connector.connect( user='root', 
-							host = '127.0.0.1', 
-							db= 'weather', 
-							passwd='hidden')
+		host = '127.0.0.1', 
+		db= 'weather', 
+		passwd='hidden')
 cur = conn.cursor()
  
 
