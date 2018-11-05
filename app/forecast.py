@@ -6,9 +6,9 @@ from darksky import forecast
 from conf import token, cities, start, end
 
 conn = mysql.connector.connect( user='root', 
-								host = '127.0.0.1', 
-								db= 'weather', 
-								passwd='hidden')
+							host = '127.0.0.1', 
+							db= 'weather', 
+							passwd='hidden')
 cur = conn.cursor()
  
 
@@ -16,7 +16,7 @@ def main():
 	""" Collect all summer dates in a list and iterate through it""" 
 	date_generated = [start + datetime.timedelta(days=x) for x in range(0, (end-start).days)]
 	
-	or summer_day in date_generated:
+	for summer_day in date_generated:
 		my_date = dt.strptime(str(summer_day), "%Y-%m-%d").isoformat() #api's time arg requires isoformat
 		for city, coordinates in cities.items():
 			
