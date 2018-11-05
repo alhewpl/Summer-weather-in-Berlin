@@ -10,6 +10,7 @@ $ mkvirtualenv darksky
 ##### 2) Activate the virtualenv
 ```bash
 $ source /Virtualenvs/darksky/bin/activate
+```
 
 ##### 3) Install dependencies
 ```bash
