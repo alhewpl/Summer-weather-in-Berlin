@@ -1,0 +1,2 @@
+mysql-connector-python==8.0.12
+darkskylib==0.3
